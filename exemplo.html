@@ -4,7 +4,12 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>PESQUISA DE FOTO</h1>
+    <BR></BR>
   <form >
+
+    
+
     <label for="nome">Nome:</label>
     <input type="text" 
     id="nome" 
@@ -46,20 +51,45 @@
     <input type="radio"
     name="sexo"
     id="masculino">Masculino
+
     <label>
     <input type="radio"
     name="sexo"
-    id="feminino">Feminino
+    id="feminino" checked>Feminino
   </label>
 
     <br><br>
     <button type="Reset">Enviar</button>
     <button type="submit">Limpar</button>
         
+    <label>
+      <input type="Checkbox"
+      name="futebol"
+      id="futebol">Futebol
+    </label>
+
     <br><br>
-    
+    <label for="cidade">Cidade</label>
+    <select name="cidade" id="cidade">
+      <option disabled selected>Selecione...</option>
+      <option value="ntl">Natal</option>
+      <option value="poa">Porto Alegre</option>
+      <option value="rec">Recife</option>
+      <option value="gru">Sao Paulo</option>
+    </select>
+
+    <br><br>
+
+    <label for="sugestao">Sugestão:</label>
+    <br><textarea name="sugestao" 
+    id="sugestao" 
+    cols="15"
+    rows="5"
+    maxlength="400"
+    placeholder="Sua sugestao aqui..."></textarea>
 
     <button type="submit">Cadastrar</button>
+    <button type="reset">Limpar</button>
 
 
   </form>  
